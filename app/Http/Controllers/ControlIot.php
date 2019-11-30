@@ -16,7 +16,7 @@ class ControlIot extends Controller
     {
        
         $iot = Iot::all();
-        
+
         return view('iot', compact('iot'));
 
     }
@@ -44,7 +44,10 @@ class ControlIot extends Controller
        // print_r($request->input('pluviometro'));
 
         $data = date("Y-m-d H:i:s");
-       
+        $time = strtotime($data);
+        $time = $time - (3 * 60 * 60);
+        $data = date("d/m/Y H:i:s", $time);
+
         $cadastro = new Iot();
         $cadastro->data                = $data;
         $cadastro->idpl                = $request->input('idpl' );
