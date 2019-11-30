@@ -14,7 +14,10 @@ class ControlIot extends Controller
      */
     public function index()
     {
-        return view('iot');
+       
+        $iot = Iot::all();
+        return view('iot', compact('iot'));
+
     }
 
     /**

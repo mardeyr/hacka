@@ -15,7 +15,7 @@ Route::get('/home', function () {
     return view('welcome');
 });
 
-Route::get( '/previsao',         'ControlPrevisao@index') ;
+Route::get( '/previsao',      'ControlPrevisao@index') ;
 Route::get( '/predicao',      'ControlPredicao@index') ;
 Route::get( '/iot',                'ControlIot@index') ;
 Route::post( '/iotEst',           'ControlIot@store') ;
