@@ -30,7 +30,7 @@ return [
     |
     */
    
-    'logo' => '<b>Chuvas</b>UDI',
+    'logo' => '<b>Desalaga</b>UDI',
     'logo_img' => 'vendor/adminlte/dist/img/logoc.png',
     'logo_img_class' => 'brand-image-xl',
     'logo_img_xl' => null,

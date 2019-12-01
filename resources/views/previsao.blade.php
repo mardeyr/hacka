@@ -61,13 +61,5 @@ windyInit(options, windyAPI => {
 });
 
 
-
-
-
-
-
-
-
-
 </script>
 @stop
