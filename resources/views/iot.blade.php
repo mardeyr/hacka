@@ -46,7 +46,7 @@
         var marcas = [
             @foreach($iot as $iots) {
                 datas: "{{ $iots->data }}",
-                chuva: "{{round(( ($iots->pluviometro * 0.28) - 36,4 ), 2) }}",
+                chuva: "{{round(( ($iots->pluviometro * 0.28) - 36.4 ), 2) }}",
             },
             @endforeach
         ];
